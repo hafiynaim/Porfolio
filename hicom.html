@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hicom Diecasting Projects | Muhammad Hafiy Naim bin Mohd Ismadi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <style>
+    /* Simple fade effect */
+    .fade-out {
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Image -->
+  <section class="relative h-screen overflow-hidden">
+    <img id="heroImage" src="images/hicom-hero.jpg" alt="Hicom Industry" class="w-full h-full object-cover object-center fade-out">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h1 class="text-white text-4xl md:text-6xl font-bold">Hicom Diecasting</h1>
+    </div>
+    <a href="index.html" class="absolute top-6 left-6 text-white underline">← Back to Home</a>
+  </section>
+
+  <!-- About Hicom -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">About Hicom Diecasting</h2>
+    <p class="text-gray-700 mb-2 text-justify">
+      Hicom Diecasting Sdn. Bhd., established in 1985 and located in Shah Alam, is a leading Malaysian manufacturer specializing in high-pressure aluminum die casting and precision machining. The company operates with over 19 advanced die-casting machines and 100+ CNC machining centers, serving both local and international clients in the automotive, motorcycle, and industrial sectors. Hicom Diecasting is committed to quality, innovation, and continuous improvement, working closely with OEMs and Tier-1 suppliers to deliver high-performance components.
+    </p>
+    <p class="text-gray-700 text-justify">
+      During my internship at Hicom Diecasting Sdn. Bhd., I was given the opportunity to be actively involved in various digitalization, automation, and production improvement projects. One of the major highlights was contributing to the AGYTEK-HDSB Modernization and Digitalization Project, where I helped implement the Enterprise Asset Management (EAM) system. This involved preparing machine and maintenance data, assisting with system configuration, and supporting the first IoT showcase dry run to present real-time production monitoring through dashboards.
+
+I also gained hands-on experience in AI development, particularly in training an AI Vision Inspection system using YOLOv8 for defect detection on heat sink components. This enhanced my skills in computer vision, dataset handling, and model deployment for industrial quality control. In addition, I was involved in conducting cycle time analysis and building man-machine charts for robotic deburring operations. This allowed me to understand lean manufacturing concepts, identify bottlenecks, and propose improvements to boost process efficiency.
+
+Apart from technical exposure, I also worked on data analytics using Minitab, supported automation workflow exploration using n8n, and developed small-scale web systems using PHP, MySQL, and Python for dashboard and monitoring solutions. The internship gave me valuable insights into real-world industrial environments, enhanced my problem-solving abilities, and strengthened my understanding of smart manufacturing systems and collaborative teamwork.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section class="max-w-5xl mx-auto px-4 py-12 grid gap-8">
+    <!-- Project 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Enterprise Asset Management (EAM) System Implementation</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+   Prepared asset lists and preventive maintenance (PM) data, assisted in digital checklist setup, and supported the deployment of machine monitoring dashboards with AGYTEK.
+  </p>
+</div>
+
+
+    <!-- Project 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">AI Vision Inspection System (YOLOv8)</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    Developed and trained a deep learning model using YOLOv8 to detect defects on heat sink parts, transitioning from Roboflow to a fully customized detection pipeline.
+  </p>
+</div>
+
+<!-- Project 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Man-Machine Chart for Robotic Deburring</h3>
+  <!-- Carousel -->
+<div class="swiper mySwiper max-w-xl mx-auto mt-6">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/MAN1.png" alt="Project 1" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/MAN2.png" alt="Project 2" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/MAN3.png" alt="Project 3" class="w-full rounded shadow" />
+    </div>
+    <!-- Add more swiper-slide as needed -->
+  </div>
+  <!-- Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+  <p class="text-gray-700 text-justify">
+    Collected and analyzed cycle time data for Yamaha parts, created a man-machine chart, identified idle time, bottlenecks, and calculated takt time for efficiency improvement.
+  </p>
+</div>
+
+<!-- Project 5 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Phishing Email Detection System</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    Designed a system using Python and Google Cloud Console that scans incoming emails and sends alerts when potential phishing content is detected.
+  </p>
+</div>
+
+<!-- Project 6 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Workflow Automation with n8n</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    Installed and tested n8n to automate tasks such as Google Calendar event creation and webhook/API-based workflows, exploring business process automation tools.
+  </p>
+</div>
+
+<!-- Project 7 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Data Analytics Using Minitab</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    Supported SPC (Statistical Process Control) chart development for oil seal parts using production data, focusing on process capability and quality monitoring.
+  </p>
+</div>
+
+<!-- Project 8 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Agriculture Machine R&D (UGV & UAV for Pontian Project)</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    Assisted in system design for a smart agriculture machine, including features for GPS-based location tracking, machine condition monitoring, oil palm mapping, and health analysis of trees.
+  </p>
+</div>
+
+
+    <!-- Add more projects as needed -->
+  </section>
+
+  <script>
+    // Fade out hero image on scroll
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('heroImage');
+      const scrollY = window.scrollY;
+      const fadeStart = 0;
+      const fadeEnd = window.innerHeight / 1.5;
+      const opacity = 1 - Math.min(scrollY / fadeEnd, 1);
+      hero.style.opacity = opacity;
+    });
+  </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+  });
+</script>
+
+</body>
+</html>

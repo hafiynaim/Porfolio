@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malay College Kuala Kangsar Projects | Muhammad Hafiy Naim bin Mohd Ismadi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <style>
+    /* Simple fade effect */
+    .fade-out {
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Image -->
+  <section class="relative h-screen overflow-hidden">
+    <img id="heroImage" src="images/mckk-hero.jpeg" alt="mckk" class="w-full h-full object-cover object-center fade-out">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h1 class="text-white text-4xl md:text-6xl font-bold">Malay College Kuala Kangsar</h1>
+    </div>
+    <a href="index.html" class="absolute top-6 left-6 text-white underline">← Back to Home</a>
+  </section>
+
+  <!-- About Top Glove -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">About Malay College Kuala Kangsar</h2>
+    <p class="text-gray-700 mb-2 text-justify">
+      Malay College Kuala Kangsar (MCKK) is a premier all-boys boarding school in Perak, Malaysia, established in 1905. Often referred to as the "Eton of the East," it was originally founded to educate the sons of Malay royalty and nobility. Today, MCKK is renowned for its academic excellence, leadership development, and strong traditions in sports and extracurricular achievements. The college continues to produce influential leaders across various fields in Malaysia and maintains a prestigious reputation nationally and internationally. 
+    </p>
+    <p class="text-gray-700 text-justify">
+      During my time at Malay College Kuala Kangsar (MCKK), I was actively involved in both academics and co-curricular activities, which played a significant role in shaping my leadership and teamwork skills. As a member of the school’s rugby team, I developed discipline, resilience, and the ability to perform under pressure with qualities that continue to support my personal and professional growth.
+
+I also actively participated in competitions, where I was awarded Champion in the Ecobot Competition and Key Fiesta, both held at UTAR, and received a Consolation Prize in the UNESCO Day Essay Writing Competition. These experiences honed my creativity, critical thinking, and public presentation abilities.
+
+In addition, I was a member of Badan Nahdhah Islamiah (BANI), where I engaged in values-based leadership and spiritual development programs. My involvement in BANI further strengthened my communication skills, teamwork, and sense of responsibility.
+
+Overall, my experience at MCKK equipped me with a strong academic foundation, competitive spirit, and leadership mindset that prepared me to thrive in higher education and future professional environments.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section class="max-w-5xl mx-auto px-4 py-12 grid gap-8">
+    <!-- Project 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Safe Car Vent</h3>
+  <div class="flex justify-center">
+    <img src="images/savecarvent.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    The "Safe Car Vent" project utilizes an Arduino Uno to enhance in-car safety and comfort by automatically managing air circulation. The system monitors temperature and carbon monoxide levels using sensors, activating a fan and vent mechanism when either exceeds safe thresholds. This project aims to prevent hazardous conditions inside the vehicle, particularly during hot weather or in enclosed spaces, ensuring a safer environment for passengers and reducing the risk of carbon monoxide buildup.
+  </p>
+</div>
+
+
+    
+    <!-- Add more projects as needed -->
+  </section>
+
+  <script>
+    // Fade out hero image on scroll
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('heroImage');
+      const scrollY = window.scrollY;
+      const fadeStart = 0;
+      const fadeEnd = window.innerHeight / 1.5;
+      const opacity = 1 - Math.min(scrollY / fadeEnd, 1);
+      hero.style.opacity = opacity;
+    });
+  </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+  });
+</script>
+
+</body>
+</html>

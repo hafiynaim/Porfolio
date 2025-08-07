@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Glove Projects | Muhammad Hafiy Naim bin Mohd Ismadi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+  <style>
+    /* Simple fade effect */
+    .fade-out {
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Image -->
+  <section class="relative h-screen overflow-hidden">
+    <img id="heroImage" src="images/topglove-hero.jpg" alt="Top Glove Industry" class="w-full h-full object-cover object-center fade-out">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h1 class="text-white text-4xl md:text-6xl font-bold">Top Glove</h1>
+    </div>
+    <a href="index.html" class="absolute top-6 left-6 text-white underline">← Back to Home</a>
+  </section>
+
+  <!-- About Top Glove -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">About Top Glove</h2>
+    <p class="text-gray-700 mb-2 text-justify">
+      Top Glove Corporation Bhd is the world's largest manufacturer of gloves, supplying protective and medical gloves globally.
+    </p>
+    <p class="text-gray-700 text-justify">
+      During my internship at Top Glove Corporation Berhad as a Digitalization and Automation Engineer Trainee, I was exposed to a wide range of industrial automation technologies that greatly enhanced my technical skills and practical engineering knowledge. I worked hands-on with Omron PLCs (CP1E and NX1P2 models) and ABB ACS580 inverters, gaining valuable experience in configuring, programming, and debugging automation systems using CX-Programmer and Sysmac Studio. These tasks allowed me to understand how logic control and motor automation function within a real industrial environment.
+
+One of my key contributions was developing an automatic latex oven cut-off system using photoelectric sensors and PLC logic to improve production line safety and efficiency. I was also entrusted to integrate the Wenglor B50S002 vision sensor for real-time defect detection and connect it with digital output components such as alarms and relays. Furthermore, I collaborated with the team to install Advantech WISE-4051 modules and 24VDC power supplies to enable IoT monitoring through Power BI dashboards, allowing live data collection and process tracking.
+
+In addition to hands-on technical work, I contributed to panel design and assembly, including creating 2D layout drawings, wiring schematics, and Bills of Materials (BOM) using SolidWorks Electrical. I also took part in project delivery, testing, and troubleshooting at production sites, engaging directly with stakeholders such as engineers, technicians, and procurement teams to ensure smooth project execution. These real-world responsibilities helped me develop my problem-solving, communication, and documentation skills.
+
+Overall, the internship provided a comprehensive learning experience that strengthened both my theoretical foundation and practical capabilities in industrial automation, IoT systems, and engineering project management.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section class="max-w-5xl mx-auto px-4 py-12 grid gap-8">
+  
+  <!-- Project 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Conveyor Belt Counting and Cut-Off System</h3>
+  <!-- Carousel -->
+<div class="swiper mySwiper max-w-xl mx-auto mt-6">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/F391.jpg" alt="Project 1" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/F392.jpg" alt="Project 2" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/F393.jpg" alt="Project 3" class="w-full rounded shadow" />
+    </div>
+    <!-- Add more swiper-slide as needed -->
+  </div>
+  <!-- Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+  <p class="text-gray-700 text-justify">
+    Designed and assembled a control panel using a photoelectric sensor, contactor, and relay with a Wise-4051 module to detect and count items on a conveyor. The system stops the conveyor automatically after reaching 85 items and sends count and timestamp data to a Power BI dashboard via the Wise-4051. A timer is added to prevent false double-counting by introducing a 2-second delay between counts.
+  </p>
+</div>
+    <!-- Project 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Automatic Latex Oven Cut-Off System</h3>
+  <!-- Carousel -->
+<div class="swiper mySwiper max-w-xl mx-auto mt-6">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/OVEN1.jpg" alt="Project 1" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/OVEN2.jpg" alt="Project 2" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/OVEN3.png" alt="Project 3" class="w-full rounded shadow" />
+    </div>
+    <!-- Add more swiper-slide as needed -->
+  </div>
+  <!-- Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+  <p class="text-gray-700 text-justify">
+    Developed a PLC-based automation system using Omron CP1E to control the latex oven based on former detection. Two photoelectric sensors detect the number of formers on the bypass and dipping tracks. Once 10 formers are detected on the bypass, the oven power is cut off automatically, and the system locks to prevent retriggering. A reset is triggered when the dipping track also detects 10 formers, unlocking the system. The system also includes a manual/automatic mode selector switch for operator flexibility.
+  </p>
+</div>
+
+
+    
+
+<!-- Project 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Pressure Sensor and Inverter Control System</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    Worked on integrating an ifm PI1807 pressure sensor with four ABB ACS580 inverters to automate pump control based on RO tank water levels. Configured sensor digital outputs to trigger inverter start and stop based on set thresholds (e.g., 3m and 2.5m). The system includes relay interfacing, inverter parameter adjustments, and future expansion to cloud-based monitoring using the ECU-1251 gateway and ET-7002 module.
+  </p>
+</div>
+
+<!-- Project 4 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Vision Sensor Mounting and NG Detection</h3>
+  <!-- Carousel -->
+<div class="swiper mySwiper max-w-xl mx-auto mt-6">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/WENG1.jpg" alt="Project 1" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/WENG2.jpg" alt="Project 2" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/WENG3.jpg" alt="Project 3" class="w-full rounded shadow" />
+    </div>
+    <div class="swiper-slide">
+      <img src="images/WENG4.jpg" alt="Project 3" class="w-full rounded shadow" />
+    </div>
+    <!-- Add more swiper-slide as needed -->
+  </div>
+  <!-- Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+  <p class="text-gray-700 text-justify">
+    Set up and optimized the Wenglor B50S002 AI vision sensor to detect plastic sheet offset or folded lines. The system provides real-time NG indication using a buzzer and LED. Designed and refined the mechanical mounting using aluminum profiles for stability and adjusted camera angle and distance to improve accuracy within a ±2 mm tolerance range.
+  </p>
+</div>
+
+<!-- Project 5 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-bold mb-2">Oven Monitoring System with Wise-4051</h3>
+  <div class="flex justify-center">
+    <img src="images/topglove1.jpg" alt="Production Line" class="rounded mb-4 max-w-sm w-full" />
+  </div>
+  <p class="text-gray-700 text-justify">
+    Developed a monitoring system using the Advantech Wise-4051 and a 24VDC power supply to collect data from oven systems at F18. Designed the circuit and drilled the panel for input/output wiring. The system was designed for future integration into a Power BI dashboard for real-time production and fault tracking.
+  </p>
+</div>
+
+
+    <!-- Add more projects as needed -->
+  </section>
+
+  <script>
+    // Fade out hero image on scroll
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('heroImage');
+      const scrollY = window.scrollY;
+      const fadeStart = 0;
+      const fadeEnd = window.innerHeight / 1.5;
+      const opacity = 1 - Math.min(scrollY / fadeEnd, 1);
+      hero.style.opacity = opacity;
+    });
+  </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+  });
+</script>
+
+</body>
+</html>
